@@ -1,0 +1,29 @@
+
+body {
+  background-color: powderblue;
+  margin: 0;
+}
+
+#headerspan { 
+  position: relative;
+  top: 0px; 
+  left: 0px; 
+  opacity: 1.0;
+  background-image: url("media/pacers-running-into-forrest-wide-light2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+#headerspan h1 {
+  color: purple;
+  font-size: 30pt;
+  text-align: center;
+}
+
+#headerspan td {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+}
