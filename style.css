@@ -1,0 +1,83 @@
+
+body {
+  background-color: powderblue;
+  margin: 0;
+}
+
+#headerspan { 
+  position: relative;
+  opacity: 1.0;
+  background-image: url("media/pacers-running-into-forrest-wide-light2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#currentSeasonDetails { 
+  position: relative;
+  opacity: 1.0;
+  background-color: purple;
+  padding-top: 20px;
+}
+
+#currentSeasonDetails table { 
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+#currentSeasonDetails td { 
+  width: 50%;
+  vertical-align: top;
+}
+
+#currentSeasonDetails h2 { 
+  color: white;
+  font-size: 35pt;
+  text-align: center;
+}
+
+#currentSeasonDetails p { 
+  color: white;
+  font-size: 24pt;
+  text-align: center;
+}
+
+#headerspan h1 {
+  color: purple;
+  font-size: 40pt;
+  text-align: center;
+}
+
+#headerspan td {
+  padding-left: 40px;
+}
+
+#aboutPacers { 
+  position: relative;
+  opacity: 1.0;
+  background-color: white;
+  padding-top: 00px;
+}
+
+#aboutPacers p { 
+  color: purple;
+  font-size: 18pt;
+  padding-left: 20pt;
+  padding-right: 20pt;
+}
+
+#aboutPacers h2 { 
+  color: purple;
+  text-align: center;
+  font-size: 35pt;
+  padding-top: 0.83em;
+  margin-block-start: 0em;
+}
+
+#history { 
+  position: relative;
+  opacity: 1.0;
+}
