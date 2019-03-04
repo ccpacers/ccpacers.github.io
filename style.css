@@ -56,22 +56,46 @@ body {
   padding-left: 40px;
 }
 
-#aboutPacers { 
+#sectionWhite { 
   position: relative;
   opacity: 1.0;
   background-color: white;
   padding-top: 00px;
+  padding-bottom: 20px;
 }
 
-#aboutPacers p { 
+#sectionWhite p { 
   color: purple;
   font-size: 18pt;
   padding-left: 20pt;
   padding-right: 20pt;
 }
 
-#aboutPacers h2 { 
+#sectionWhite h2 { 
   color: purple;
+  text-align: center;
+  font-size: 35pt;
+  padding-top: 0.83em;
+  margin-block-start: 0em;
+}
+
+#sectionPurple { 
+  position: relative;
+  opacity: 1.0;
+  background-color: purple;
+  padding-top: 00px;
+  padding-bottom: 20px;
+}
+
+#sectionPurple p { 
+  color: white;
+  font-size: 18pt;
+  padding-left: 20pt;
+  padding-right: 20pt;
+}
+
+#sectionPurple h2 { 
+  color: white;
   text-align: center;
   font-size: 35pt;
   padding-top: 0.83em;
