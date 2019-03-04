@@ -116,3 +116,22 @@ body {
   opacity: 1.0;
 }
 
+#purpleHeader { 
+  position: relative;
+  opacity: 1.0;
+  background-color: purple;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#purpleHeader h2 { 
+  color: white;
+  text-align: center;
+  font-size: 35pt;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-block-start: 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
