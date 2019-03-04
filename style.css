@@ -71,6 +71,13 @@ body {
   padding-right: 20pt;
 }
 
+#sectionWhite li { 
+  color: purple;
+  font-size: 12pt;
+  padding-left: 10pt;
+  padding-right: 20pt;
+}
+
 #sectionWhite h2 { 
   color: purple;
   text-align: center;
