@@ -1,0 +1,243 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta id="p7TM3" name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CCPacers</title>
+<style type="text/css"> 
+<!-- 
+body  {
+background: #666666;
+margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+padding: 0;
+text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+color: #000000;
+font-family: "Trebuchet MS", Arial, sans-serif;
+font-size: 90%;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.twoColElsLtHdr #container {
+width: 60em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
+background: #FFFFFF;
+margin: 0 auto;
+text-align: left; /* this overrides the text-align: center on the body element. */
+color: #000000;
+} 
+.twoColElsLtHdr #header {
+padding: 0;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+background-color: #FFFFFF;
+} 
+.twoColElsLtHdr #header h1 {
+margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsLtHdr #sidebar1 p" rule.
+*/
+.twoColElsLtHdr #sidebar1 {
+float: left;
+width: 12em; /* since this element is floated, a width must be given */
+background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+padding: 0px 0; /* top and bottom padding create visual space within this div */
+}
+.twoColElsLtHdr #sidebar1 h3, .twoColElsLtHdr #sidebar1 p {
+margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+margin-right: 10px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsLtHdr #mainContent {
+margin: 0 1.5em 0 13em; /* the right margin can be given in ems or pixels. It creates the space down the right side of the page. */
+color: #000000;
+line-height: normal;
+} 
+.twoColElsLtHdr #footer { 
+padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+background:#DDDDDD;
+} 
+.twoColElsLtHdr #footer p {
+margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+float: right;
+margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+float: left;
+margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.style8 {color: #79148B;
+font-style: italic;
+font-weight: bold;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+--> 
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsLtHdr #sidebar1 { padding-top: 30px; }
+.twoColElsLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<style type="text/css">
+<!--
+
+h2 {
+color: #79148B;
+font-weight: bold;
+font-style: italic;
+text-decoration: underline;    
+}
+.style5 {color: #79148B;
+font-weight: bold;
+font-size: 18pt;
+}
+
+.style20 {
+color: #000000;
+font-weight: bold;
+font-style: italic;
+}
+-->
+</style>
+<link href="p7tm3/p7TM3-01.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="p7tm3/p7TM3scripts.js"></script>
+</head>
+
+<body class="twoColElsLtHdr">
+
+<div id="container">
+  <div id="header">
+    <span class="style8" style="margin-top: 0; margin-bottom: 0"><span class="style8" style="margin-top: 0; margin-bottom: 0"><span class="style8" style="margin-top: 0; margin-bottom: 0">
+    <div align="left">
+      <p align="left">&nbsp;</p>
+      <table width="857" border="0">
+        <tr>
+          <td width="189" height="105"><div align="center"><img src="media/Pacerslogo.jpg" width="111" height="79" alt="Logo" border="0" /></div></td>
+          <td width="658"><h1 align="center" class="style8" style="margin-top: 0px;margin-bottom: -">The Chapel Hill / Carrboro</h1>
+          <h1 align="center" class="style8"> Pacers Youth Running Club</h1></td>
+        </tr>
+      </table>
+      <p align="left"><!-- end #header -->
+    </p>
+    </div>
+    </div>
+  <div id="sidebar1">
+    <div class="p7TM3-01 p7TM3 responsive" id="p7TM3_1">
+      <div id="p7TM3tb_1" class="p7TM3-toolbar closed"><a href="#" title="Hide/Show Menu"><img src="p7tm3/img/toggle-icon.png" alt="Toggle Menu" /></a></div>
+      <ul class="p7TM3 closed">
+        <li><a href="index.htm">Home</a></li>
+        <!--<li><a href="Dates.htm">Dates</a></li>-->
+        <li><a href="Rulesold.htm">Rules</a></li>
+        <!--<li><a href="Directions.htm">Directions</a></li>-->
+        <li><a href="USATF.htm">USATF</a></li>
+        <li><a href="Links.htm">Other Links</a></li>
+      </ul>
+      <script type="text/javascript">
+<!--
+P7_TM3op('p7TM3_1',1,0,0,1,1,1,0,1,-1,300,1);
+//-->
+      </script>
+    </div>
+    <p>&nbsp;</p>
+    <!-- end #sidebar1 --></div>
+  <div id="mainContent">
+    <p align="center" style="margin-bottom: 0"></p>
+    <div align="center"></div>
+    <p align="center" class="style20">Welcome to the website  for the Chapel Hill / Carrboro Pacers Youth Running  Club -- <br />
+    a healthy concern for 30 years running!</p>
+    <H2 align="center">2019 Spring Season Update & Details</H2>
+    <ul>
+        <li><b>Season information:</b> 
+            <ul>
+                <li>Practice dates: (tentative) 19 March - 06 June 2019</li>
+                <li>Practice times: Tuesdays and Thursdays from (tentative) 5:45 - 6:45 PM</li>
+                <li>Practice location: New UNC track (precise location TBD)</li>
+                <li>Running groups: several differentiated running groups will run around UNC campus and on nearby trails; the <em>grayhounds</em>--a group focused on track workouts--will practice on the track for parts of the season</li>
+            </ul>
+        </li>
+        <li><b>Sign up:</b>
+            <ul>
+                <li>Registration is currently open to returning runners</li>
+                <li>Register using RunSignup</li>
+                <li>Due to the overwhelming growth of the Pacers in recent years, and the desire to sustain a safe and personalized program, we limit the number of runners who may participate each season</li>
+            </ul>
+        </li>
+        <li><b>Volunteering:</b>
+            <ul><li>The pacers team is entirely run by volunteers and there are many ways to help (read the family involvement section below). Parents are always welcome to join us on our runs.</li></ul>
+        </li>
+        <li><b>More information:</b>
+            <ul><li>Email ccpacers@gmail.com</li></ul>
+        </li>
+    </ul>
+ 
+    <H2 align="center">Fall &amp; Spring Seasons</H2>
+    <p align="left"><strong><em>Boys and girls aged 7 - 18 join the Fall and/or Spring seasons of Pacers for a competitive edge, for exercise, or just for fun.  Runners are grouped according to age and / or ability, with shorter runs  tailored for beginners and more vigorous trail runs for seasoned  veterans.&nbsp; Whatever your ability, we're simply looking forward to offering  creative sessions which aim to instill a love of running as a lifetime  sport.&nbsp; Parents are always welcome to join the runs! </em></strong></p>
+    <p align="left"><strong><em>Both seasons include woods and trail running, varied workouts, time trials for PRs, scavenger hunt &amp; relay fun,  and an end-of-season family party.&nbsp; The spring season also offers an opportunity to focus on sprinting, and an introduction to hurdles, baton relays and field events. Coaches offer tips on such topics as running form, stretching, and hydration &amp; nutrition at the beginning and informally throughout practices.&nbsp; Runners  have the opportunity to join other Pacers in local races* or prepare for  end-of-season USATF Junior Olympic competitions, but the emphasis is always on  fun and participation with the Pacers -- continually &quot;on the run&quot;  since the 1970's (scroll down for the most recently unearthed 80s composite)!</em></strong><strong></strong></p>
+<H2 align="center">Registration</H2>
+<p align="left"><strong><em>Youngsters age 7  (or turning 7 during this current calendar year) through aged 18 may run, and  the price is $75 for the first child, and $55 for additional siblings.&nbsp;  Due to the overwhelming  growth of the Pacers in recent years and the desire to sustain a safe and personalized program, we limit the number of runners who may  participate each season.&nbsp; Our&nbsp;volunteer coach teams are committed to  pursuing  the mission and legacy of the Pacers: to instill in each and every participant  a lifetime love of running.</em></strong></p>
+<p align="left"><strong><em>Please email ccpacers@gmail.com to join the mailing list for info on an upcoming season.</em></strong></p>
+<p align="left"><strong><em>Registration for each season is held online  on a first-come, first-served basis,  open initially to those who have participated  in the past two seasons and / or signed up for  the Pacers mailing list before the first of the registration month. </em></strong></p>
+<H2 align="center">Location &amp; Tips</H2>
+<p align="left"><strong><em> Fall practices run Tuesdays and Thursdays from Carrboro's Wilson Park, Seawell Elementary, or Glenwood Elementary. Spring practices run Tuesday and Thursdays near UNC campus. Registered families will received details prior to the first practice.</em></strong></p>
+<p align="left"><strong><em>Adverse Weather:</em></strong><strong></strong> <br />
+  <strong><em>If there are storms in the area, use your family judgement.&nbsp; We do run in the rain, but not in heavy thunder/lightning.  Generally, we'll try to make the call as to whether practice  will go on as scheduled by 45 minutes prior to start at the latest and try to send an email, based on area Doppler weather  data, but sometimes communication is not possible. If in doubt choose to stay home, or remain close by if you can, and know that we are watching the radar and moving runners to safety if the weather takes a turn for the worse during practice.&nbsp;</em></strong></p>
+<p><strong><em>Attire:</em></strong><strong></strong><br />
+      <strong><em>Runners must be appropriately attired in  workout clothes and running shoes.&nbsp; These shoes don't have to be high end, but they must be athletic shoes suitable for running (not basketball  shoes).&nbsp; We support <a href="http://www.fleetfeetcarrboro.com/">Fleet Feet Sports in Carrboro</a> as our running community resource!</em></strong></p>
+  <p><strong><em>Hydration: </em></strong><strong></strong><br />
+      <strong><em>We  have a cooler of Gatorade /  sports drink available at the conclusion of each practice, but there's only so much  to go around, so please have your Pacer also bring a water bottle with their  name on it. The importance of daily hydration increases with rising temperatures.</em></strong></p>
+  <H2 align="center">Family Involvement</H2>
+  <p align="left"><strong><em>Pacers culture enjoys and depends on the  involvement of Pacer families: parents, caregivers, siblings,  grandparents.&nbsp; Not all are runners, but there are many  opportunities.&nbsp;Here are some of the many of the ways family members support  Pacers:</em></strong></p>
+  <ul>
+    <li><strong><em>sweep/run at practices on a regular or  sporadic basis</em></strong></li>
+    <li><strong><em>mix and bring Gatorade to practice one day  a week (provided by Pacers)</em></strong></li>
+    <li><strong><em>assist with organized activities like Time  Trials, scavenger hunts or relays (with or without running)</em></strong></li>
+    <li><strong><em>assist with distribution of Pacer Tees</em></strong></li>
+    <li><strong><em>take photos of practices &amp; events to  share and celebrate Pacers' experiences</em></strong></li>
+    <li><strong><em>assist with coordination of weekend events  (optional races, USATF)</em></strong></li>
+    <li><strong><em>assist with the preparation of PR ribbons</em></strong></li>
+    <li><strong><em>help plan and coordinate end-of-season family celebration.</em></strong></li>
+  </ul>
+  <H2 align="center">Coach  Team &amp; Contacts</H2>
+  <p align="left"><em><strong><strong><em>The Pacers is led by Head Coach Eimy Rivas Plata, and welcomes veteran and new volunteer coaches   including </em></strong>parents, <strong><em>members of the UNC XC Club, and middle and high school junior coaches.</em></strong></strong></em></p>
+  <p align="left"><em><strong><strong><em>It's a privilege to continue the traditions and legacy of Pacers in its 4th decade. Below are a few pieces of memorabilia shared by alumni, including our own Coach Tina!</em></strong></strong></em> </p>
+  <p align="center"><strong><em>For more information email </em></strong><strong><em>ccpacers@gmail.com.</em></strong></p>
+  <p align="center"><img src="media/early pacers medals - j drake.jpg" width="200" height="300" /><img src="media/early pacers photos.jpg" width="200" height="300" /><img src="media/pacers pr ribbons then and now.jpg" width="200" height="300" /></p>
+  <p align="center"><strong><em>*Weekend races  are optional; </em></strong><strong><em>  we have a range of events &amp; activities throughout the season.</em></strong><strong></strong></p>
+    <p align="center" class="style5">PACERS ~ ON THE RUN SINCE THE 70s!</p>
+    <p align="center" class="style5"><img src="media/Pacer group reduced copy.jpg" width="607" height="324" /></p>
+    <p align="center" class="style5">early 80's pacers composite!</p>
+  <!-- end #mainContent --></div>
+<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+   <div id="footer">
+    <p><a href="index.htm">Back to Top</a></p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>
+
