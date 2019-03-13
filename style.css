@@ -153,6 +153,7 @@ body {
 #history { 
   position: relative;
   opacity: 1.0;
+  background-color: white;
 }
 
 #purpleHeader { 
