@@ -156,6 +156,10 @@ body {
   background-color: white;
 }
 
+#history table {
+  background-color: white;
+}
+
 #purpleHeader { 
   position: relative;
   opacity: 1.0;
