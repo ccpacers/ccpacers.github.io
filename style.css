@@ -1,11 +1,18 @@
 
 :root {
     --purple-color: rgb(124, 62, 146);
+    --body-font-family: PT Sans Narrow, Arial, sans-serif;
+    --header-font-family: PT Sans, Arial, sans-serif;
 }
 
 body {
   background-color: var(--purple-color);
   margin: 0;
+  font-family: var(--body-font-family);
+}
+
+h1, h2 {
+  font-family: var(--header-font-family);
 }
 
 #headerspan { 
