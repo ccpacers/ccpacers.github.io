@@ -1,6 +1,10 @@
 
+:root {
+    --purple-color: rgb(124, 62, 146);
+}
+
 body {
-  background-color: powderblue;
+  background-color: var(--purple-color);
   margin: 0;
 }
 
@@ -25,7 +29,7 @@ body {
 #currentSeasonDetails { 
   position: relative;
   opacity: 1.0;
-  background-color: purple;
+  background-color: var(--purple-color);
   padding-top: 20px;
 }
 
@@ -61,7 +65,7 @@ body {
 }
 
 #headerspan h1 {
-  color: purple;
+  color: var(--purple-color);
   font-size: 40pt;
   text-align: center;
 }
@@ -79,7 +83,7 @@ body {
 }
 
 #whiteHeading h2 { 
-  color: purple;
+  color: var(--purple-color);
   text-align: center;
   font-size: 35pt;
   padding-top: 0.83em;
@@ -90,11 +94,11 @@ body {
 }
 
 #whiteHeading2 {
-  background-color: white;
+  background-color: white; 
 }
 
 #whiteHeading2 h2 { 
-  color: purple;
+  color: var(--purple-color);
   text-align: center;
   font-size: 35pt;
   padding-top: 0.83em;
@@ -113,14 +117,14 @@ body {
 }
 
 #sectionWhite p { 
-  color: purple;
+  color: var(--purple-color);
   font-size: 18pt;
   padding-left: 20pt;
   padding-right: 20pt;
 }
 
 #sectionWhite li { 
-  color: purple;
+  color: var(--purple-color);
   font-size: 12pt;
   padding-left: 10pt;
   padding-right: 20pt;
@@ -129,7 +133,7 @@ body {
 #sectionPurple { 
   position: relative;
   opacity: 1.0;
-  background-color: purple;
+  background-color: var(--purple-color);
   padding-top: 00px;
   padding-bottom: 20px;
 }
@@ -163,7 +167,7 @@ body {
 #purpleHeader { 
   position: relative;
   opacity: 1.0;
-  background-color: purple;
+  background-color: var(--purple-color);
   padding-top: 0px;
   padding-bottom: 0px;
 }
