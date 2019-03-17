@@ -9,6 +9,15 @@ body {
   background-color: var(--purple-color);
   margin: 0;
   font-family: var(--body-font-family);
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
 }
 
 h1, h2 {
@@ -17,7 +26,6 @@ h1, h2 {
 
 #headerspan { 
   position: relative;
-  opacity: 1.0;
   background-image: url("media/pacers-running-into-forrest-wide-light2.jpg");
   background-size: cover;
   background-position: center;
@@ -35,7 +43,6 @@ h1, h2 {
 
 #currentSeasonDetails { 
   position: relative;
-  opacity: 1.0;
   background-color: var(--purple-color);
   padding-top: 20px;
 }
@@ -52,13 +59,12 @@ h1, h2 {
 
 #currentSeasonDetails h2 { 
   color: white;
-  font-size: 35pt;
   text-align: center;
 }
 
 #currentSeasonDetails p { 
   color: white;
-  font-size: 24pt;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -73,7 +79,6 @@ h1, h2 {
 
 #headerspan h1 {
   color: var(--purple-color);
-  font-size: 40pt;
   text-align: center;
 }
 
@@ -92,7 +97,6 @@ h1, h2 {
 #whiteHeading h2 { 
   color: var(--purple-color);
   text-align: center;
-  font-size: 35pt;
   padding-top: 0.83em;
   padding-bottom: 0.83em;
   margin-block-start: 0em;
@@ -107,7 +111,6 @@ h1, h2 {
 #whiteHeading2 h2 { 
   color: var(--purple-color);
   text-align: center;
-  font-size: 35pt;
   padding-top: 0.83em;
   padding-bottom: 0.83em;
   margin-block-start: 0em;
@@ -117,7 +120,6 @@ h1, h2 {
 
 #sectionWhite { 
   position: relative;
-  opacity: 1.0;
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -139,7 +141,6 @@ h1, h2 {
 
 #sectionPurple { 
   position: relative;
-  opacity: 1.0;
   background-color: var(--purple-color);
   padding-top: 00px;
   padding-bottom: 20px;
@@ -155,7 +156,6 @@ h1, h2 {
 #sectionPurple h2 { 
   color: white;
   text-align: center;
-  font-size: 35pt;
   padding-top: 0.83em;
   margin-block-start: 0em;
   margin-top: 0em;
@@ -163,7 +163,6 @@ h1, h2 {
 
 #history { 
   position: relative;
-  opacity: 1.0;
   background-color: white;
 }
 
@@ -173,7 +172,6 @@ h1, h2 {
 
 #purpleHeader { 
   position: relative;
-  opacity: 1.0;
   background-color: var(--purple-color);
   padding-top: 0px;
   padding-bottom: 0px;
@@ -182,7 +180,6 @@ h1, h2 {
 #purpleHeader h2 { 
   color: white;
   text-align: center;
-  font-size: 35pt;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-block-start: 0em;
