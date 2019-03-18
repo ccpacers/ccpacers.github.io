@@ -24,6 +24,24 @@ h1, h2 {
   font-family: var(--header-font-family);
 }
 
+.historyImageFullWidth {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image2grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image4grid {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 0.99fr 3fr;
+}
+
 #headerspan { 
   position: relative;
   background-image: url("media/pacers-running-into-forrest-wide-light2.jpg");
@@ -97,8 +115,8 @@ h1, h2 {
 #whiteHeading h2 { 
   color: var(--purple-color);
   text-align: center;
-  padding-top: 0.83em;
-  padding-bottom: 0.83em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   margin-block-start: 0em;
   margin-top: 0em;
   margin-bottom: 0em;
