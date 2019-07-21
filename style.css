@@ -25,9 +25,19 @@ h1, h2 {
 }
 
 .historyImageFullWidth {
+  object-fit: cover;		      
   max-width: 100%;
   display: block;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.historyImageFullWidthFlex {
+  object-fit: cover;		      
+  max-width: 100%;
+  display: block;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,7 +49,7 @@ h1, h2 {
 
 .image4grid {
   display: grid;
-  grid-template-columns: 1.5fr 3fr 0.99fr 3fr;
+  grid-template-columns: 1.5fr 3fr 0.9fr 3fr;
 }
 
 #headerspan { 
